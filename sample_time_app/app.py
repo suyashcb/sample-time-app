@@ -22,7 +22,7 @@ def render_screen(now: datetime) -> str:
     display = build_display(now)
     return (
         "\x1b[2J\x1b[H"
-        "Current Time and Date\n"
+        "Current Date and Time\n"
         "=====================\n\n"
         f"Time: {display.time_text}\n"
         f"Date: {display.date_text}\n\n"
